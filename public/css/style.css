@@ -57,5 +57,15 @@ body{
 .icon{
     transition: 0.5s;
 }
+.logo i{
+    transition: 0.3s;
+}
+.search{
+    transition: 0.5s;
+}
+.search:hover i{
+    color: #f7c601;
+    transition: 0.3s;
+}
 
 
