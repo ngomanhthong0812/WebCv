@@ -1,0 +1,61 @@
+body{
+    caret-color: transparent; /* xoá nhập chữ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my_menu .my_menu-ul .my_menu-ul--li::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 9px solid transparent;
+    border-bottom: 9px solid #f7c601; /* Màu của tam giác */
+    display: inline-block;
+    margin-right: 5px; /* Khoảng cách giữa tam giác và nội dung mục danh sách */
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    transition: 0.2s;
+}
+.my_menu .my_menu-ul .my_menu-ul--li:not(:first-child)::after {
+    right: -25px;
+    opacity: 0;
+}
+
+.my_menu .my_menu-ul .my_menu-ul--li:not(:first-child):hover::after {
+    opacity: 1;
+    right: -15px;
+}
+.home ul{
+    transition: 0.2s;
+    top: 60px;
+   opacity: 0;
+   pointer-events: none;
+}
+.home:hover ul{
+   opacity: 1;
+    top: 42px;
+    pointer-events: all;
+}
+.home ul li a img{
+    transition: transform 0.3s;
+}
+.home ul li a img:hover{
+    transform: scale(0.9);
+}
+.content_menu a{
+    padding: 0.3rem 0;
+    transition: 0.3s;
+}
+.content_menu a:hover{
+    color: #f7c601;
+}
+.menu_scroll {
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.5s ease; /* Chỉnh thời gian 0.5s cho hiệu ứng chậm hơn */
+}
+.icon{
+    transition: 0.5s;
+}
+
+
