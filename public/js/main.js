@@ -2,22 +2,51 @@
 let menuOpen = false;
 
 function expandBox() {
-    const menu = document.querySelector('.menu_scroll');
-    const icon = document.querySelector('.icon');
+  const menu = document.querySelector(".menu_scroll");
+  const icon = document.querySelector(".icon");
 
-    if (menuOpen) {
-        // Nếu menu đã mở, thu gọn nó
-        menu.style.height = '0px';
-        setTimeout(() => {
-            menu.style.opacity = '0'; // Thêm delay 0.5s trước khi thiết lập opacity thành 0
-        }, 500);
-        icon.style.transform = 'rotate(0deg)';
-        menuOpen = false;
-    } else {
-        // Nếu menu đã đóng, mở nó
-        menu.style.height = '377px';
-        menu.style.opacity = '1'; // Khi mở menu, đặt opacity thành 1
-        icon.style.transform = 'rotate(180deg)';
-        menuOpen = true;
-    }
+  if (menuOpen) {
+    // Nếu menu đã mở, thu gọn nó
+    menu.style.height = "0px";
+    setTimeout(() => {
+      menu.style.opacity = "0"; // Thêm delay 0.5s trước khi thiết lập opacity thành 0
+    }, 500);
+    icon.style.transform = "rotate(0deg)";
+    menuOpen = false;
+  } else {
+    // Nếu menu đã đóng, mở nó
+    menu.style.height = "377px";
+    menu.style.opacity = "1"; // Khi mở menu, đặt opacity thành 1
+    icon.style.transform = "rotate(180deg)";
+    menuOpen = true;
+  }
+}
+// Chuyển banner
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  console.log(slideIndex);
+  slides[slideIndex - 1].style.display = "block";
 }

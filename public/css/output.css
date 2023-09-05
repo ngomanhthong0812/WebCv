@@ -608,6 +608,10 @@ video {
   top: 44px;
 }
 
+.z-\[1\] {
+  z-index: 1;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -618,6 +622,10 @@ video {
 
 .mt-\[1px\] {
   margin-top: 1px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -1054,11 +1062,6 @@ video {
 
 .outline-0 {
   outline-width: 0px;
-}
-
-.hover\:bg-\[\#f7c601\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 198 1 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-black:hover {
