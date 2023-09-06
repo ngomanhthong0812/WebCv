@@ -50,3 +50,40 @@ function showSlides(n) {
   console.log(slideIndex);
   slides[slideIndex - 1].style.display = "block";
 }
+
+//search_parts
+var index = 0
+function search_parts(n) {
+  var menu1 = document.getElementById("menu_search_parts_1");
+  var menu2 = document.getElementById("menu_search_parts_2");
+  var menu3 = document.getElementById("menu_search_parts_3");
+  if (n == 1) {
+    menu1.classList.toggle("menu_search_parts");
+    index = 1;
+    menu2.classList.remove("menu_search_parts");
+    menu3.classList.remove("menu_search_parts");
+  }
+  if (n == 2) {
+    menu2.classList.toggle("menu_search_parts");
+    index = 2;
+    menu1.classList.remove("menu_search_parts");
+    menu3.classList.remove("menu_search_parts");
+  }
+  if (n == 3) {
+    menu3.classList.toggle("menu_search_parts");
+    index = 3;
+    menu2.classList.remove("menu_search_parts");
+    menu1.classList.remove("menu_search_parts");
+  }
+}
+
+// document.addEventListener("mouseup", function (event) {
+//   var menu = document.getElementById("menu_search_parts_" + index);
+//   var buttons = document.getElementById("menu_parts");
+
+//   // Kiểm tra xem sự kiện mouseup có xảy ra bên ngoài tất cả các nút và menu không
+//   if (!buttons.contains(event.target) && !menu.contains(event.target)) {
+//     // Xoá lớp nếu click bên ngoài nút và menu
+//     menu.classList.remove("menu_search_parts");
+//   }
+// });

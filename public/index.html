@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../public/css/style.css" />
   </head>
   <body class="text-[#4b4b4b]">
-    <div class="container-full border py-[0.8rem] px-1">
+    <div class="container-full border py-[0.8rem] px-3">
       <div class="max-w-[1490px] container m-auto flex">
         <div class="text-[13px] w-[33.3333333%] whitespace-nowrap">
           Hot days! -50% Get ready for summer
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="container-full py-[2.6rem] px-1">
+    <div class="container-full py-[2.6rem] px-3">
       <div class="max-w-[1490px] m-auto flex items-center">
         <div class="logo h-[31px] w-[29%]">
           <a href=""
@@ -52,13 +52,13 @@
           class="flex items-center w-[42%] justify-center border-[1px] border-zinc-300 p-[0.8rem] gap-[[15px]] rounded-full relative overflow-hidden px-[1rem]"
         >
           <span
-            class="flex items-center cursor-pointer hover:text-[#f7c601] justify-center text-[13px] w-[15%] whitespace-nowrap"
+            class="flex items-center cursor-pointer hover:text-[#f7c601] justify-center text-[13px] w-[20%] whitespace-nowrap px-3"
             >All Category <i class="bx bx-chevron-down text-[17px]"></i
           ></span>
           <input
             type="text"
             placeholder="Search for products..."
-            class="w-[85%] text-[13px] border-l-[1px] border-zinc-300 px-[2rem] pr-[6rem] outline-0"
+            class="w-[90%] text-[13px] border-l-[1px] border-zinc-300 px-[2rem] pr-[6rem] outline-0"
             style="caret-color: auto"
           />
           <div
@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <div class="container-full px-1 bg-[#000000]">
+    <div class="container-full px-3 bg-[#000000]">
       <div class="max-w-[1490px] m-auto flex">
         <div
           class="w-[35%] text-[13px] text-[#000000] font-[900] cursor-pointer"
@@ -749,10 +749,52 @@
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1)"><i class='bx bx-chevron-left'></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class='bx bx-chevron-right' ></i></a>
+
+  <div class="search_parts absolute w-[466px] p-[3rem] bg-white rounded-[20px] shadow-lg left-[215px] flex flex-col justify-center">
+    <h1 class="font-[800] text-[23px] italic text-black">SEARCH PARTS</h1>
+    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400]" id="menu_parts" onclick="search_parts(1)">Select Maker<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
+      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_1">
+       <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Maker</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Audi (2)</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Ford (4)</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Honda (4)</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Kia (6)</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Mercedes (2)</div>
+       <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">Tesla (0)</div>
+      </div>
+    </li>
+    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400] bg-white" id="menu_parts" onclick="search_parts(2)">Select Model<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
+      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_2">
+        <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Model</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A3 (4)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A5 (4)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A6 (4)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A8 (2)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Civic (1)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">CR-H (0)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">CRV (1)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Fiesta (3)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Rio (2)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Scorpio (4)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Soul (0)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">Sportage (2)</div>
+       </div>
+    </li>
+    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400]" id="menu_parts" onclick="search_parts(3)">Select Year<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
+      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_3">
+        <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Year</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2018 (1)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2020 (4)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2022 (5)</div>
+        <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">2023 (2)</div>
+       </div>
+    </li>
+    <span class="pt-[2rem]  italic text-black font-[900] text-[13px] text-center hover:text-[#f7c601] cursor-pointer">FILTER</span>
+  </div>
 </div>
-    
+
     </div>
 
     <script src="../public/js/main.js"></script>
