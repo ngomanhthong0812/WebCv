@@ -1,4 +1,4 @@
-// Đặt một biến để theo dõi trạng thái hiện tại của menu
+//   BROWSE ALL CATEGORIES
 let menuOpen = false;
 
 function expandBox() {
@@ -21,9 +21,15 @@ function expandBox() {
     menuOpen = true;
   }
 }
+
 // Chuyển banner
 let slideIndex = 1;
 showSlides(slideIndex);
+
+// Thiết lập hàm tự động chuyển ảnh sau mỗi 5 giây
+setInterval(function () {
+  plusSlides(1);
+}, 5000);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -47,12 +53,58 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  console.log(slideIndex);
   slides[slideIndex - 1].style.display = "block";
+
+  // Gọi hàm chuyển lớp cho "haohan" sau khi chuyển ảnh
+
+  changeHaohanClass();
+}
+
+// Hàm để thay đổi lớp của "haohan" dựa trên slideIndex
+function changeHaohanClass() {
+  let haohan1 = document.querySelector(".sale_slider_1");
+  let haohan2 = document.querySelector(".sale_slider_2");
+  let haohan3 = document.querySelector(".sale_slider_3");
+
+  // Loại bỏ tất cả các lớp trước khi thêm lớp mới
+  haohan1.classList.remove("sale_slider_1_1");
+  haohan2.classList.remove("sale_slider_2_2");
+  haohan3.classList.remove("sale_slider_3_3");
+
+  if (slideIndex === 1) {
+    haohan1.innerHTML = "MEGA SALE <br> 70% OFF";
+    haohan2.innerHTML = "EXHAUST PIPE FOR SUPER CAR";
+
+    setTimeout(() => {
+      // Thêm lại lớp CSS sau 50ms để kích hoạt hiệu ứng
+      haohan1.classList.add("sale_slider_1_1");
+      haohan2.classList.add("sale_slider_2_2");
+      haohan3.classList.add("sale_slider_3_3");
+    }, 50);
+  } else if (slideIndex === 2) {
+    haohan1.innerHTML = "CAR'S LED <br> TAIL LIGHTS";
+    haohan2.innerHTML = "PROVIDE A SAFETY ASPECT";
+    // Thêm lại lớp CSS sau 50ms để kích hoạt hiệu ứng
+    setTimeout(() => {
+      haohan1.classList.add("sale_slider_1_1");
+      haohan2.classList.add("sale_slider_2_2");
+      haohan3.classList.add("sale_slider_3_3");
+    }, 50);
+  } else if (slideIndex === 3) {
+    haohan1.innerHTML = "CAR'S BODY <br> PARTS";
+    haohan2.innerHTML = "35% OFF SPARE PARST";
+
+    // Thêm lại lớp CSS sau 50ms để kích hoạt hiệu ứng
+    setTimeout(() => {
+      haohan1.classList.add("sale_slider_1_1");
+      haohan2.classList.add("sale_slider_2_2");
+      haohan3.classList.add("sale_slider_3_3");
+    }, 50);
+  }
 }
 
 //search_parts
-var index = 0
+var index = 0;
 function search_parts(n) {
   var menu1 = document.getElementById("menu_search_parts_1");
   var menu2 = document.getElementById("menu_search_parts_2");
@@ -77,13 +129,13 @@ function search_parts(n) {
   }
 }
 
-// document.addEventListener("mouseup", function (event) {
-//   var menu = document.getElementById("menu_search_parts_" + index);
-//   var buttons = document.getElementById("menu_parts");
+document.addEventListener("mouseup", function (event) {
+  var menu = document.getElementById("menu_search_parts_" + index);
+  var buttons = document.getElementById("menu_parts_" + index);
 
-//   // Kiểm tra xem sự kiện mouseup có xảy ra bên ngoài tất cả các nút và menu không
-//   if (!buttons.contains(event.target) && !menu.contains(event.target)) {
-//     // Xoá lớp nếu click bên ngoài nút và menu
-//     menu.classList.remove("menu_search_parts");
-//   }
-// });
+  // Kiểm tra xem sự kiện mouseup có xảy ra bên ngoài tất cả các nút và menu không
+  if (!buttons.contains(event.target) && !menu.contains(event.target)) {
+    // Xoá lớp nếu click bên ngoài nút và menu
+    menu.classList.remove("menu_search_parts");
+  }
+});

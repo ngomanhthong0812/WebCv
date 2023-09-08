@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../public/css/style.css" />
+    <link href=”https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css”
+    rel=”stylesheet”>
   </head>
   <body class="text-[#4b4b4b]">
     <div class="container-full border py-[0.8rem] px-3">
@@ -30,13 +32,19 @@
         <div
           class="text-[13px] w-[33.3333333%] flex justify-end whitespace-nowrap items-center"
         >
-          <div class="border-r-2 border-zinc-300 px-[0.7rem] hover:text-[#f7c601] cursor-pointer">
+          <div
+            class="border-r-2 border-zinc-300 px-[0.7rem] hover:text-[#f7c601] cursor-pointer"
+          >
             Store Locator
           </div>
-          <div class="border-r-2 border-zinc-300 px-[0.7rem] hover:text-[#f7c601] cursor-pointer">
+          <div
+            class="border-r-2 border-zinc-300 px-[0.7rem] hover:text-[#f7c601] cursor-pointer"
+          >
             Order Tracking
           </div>
-          <div class="px-[0.7rem] hover:text-[#f7c601] cursor-pointer">FAQs</div>
+          <div class="px-[0.7rem] hover:text-[#f7c601] cursor-pointer">
+            FAQs
+          </div>
         </div>
       </div>
     </div>
@@ -191,7 +199,7 @@
         <div class="w-[30%] text-[15px]">
           <nav class="my_menu h-[100%] flex items-center">
             <ul
-              class="my_menu-ul flex gap-12 font-[900] text-white items-center justify-center h-[100%] "
+              class="my_menu-ul flex gap-12 font-[900] text-white items-center justify-center h-[100%]"
             >
               <li
                 class="my_menu-ul--li text-[13px] relative home h-[100%] flex items-center"
@@ -731,72 +739,246 @@
     </div>
 
     <div class="banner w-[100%]">
-
       <!-- Slideshow container -->
-<div class="slideshow-container">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
+            src="../public/img/slider/slider-1.jpg"
+            style="width: 100%; height: 100%"
+          />
+        </div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="../public/img/slider/slider-1.jpg" style="width:100%">
-  </div>
+        <div class="mySlides fade">
+          <img
+            src="../public/img/slider/slider-2.jpg"
+            style="width: 100%; height: 100%"
+          />
+        </div>
 
-  <div class="mySlides fade">
-    <img src="../public/img/slider/slider-2.jpg" style="width:100%">
-  </div>
+        <div class="mySlides fade">
+          <img
+            src="../public/img/slider/slider-3.jpg"
+            style="width: 100%; height: 100%"
+          />
+        </div>
 
-  <div class="mySlides fade">
-    <img src="../public/img/slider/slider-3.jpg" style="width:100%">
-  </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"
+          ><i class="bx bx-chevron-left"></i
+        ></a>
+        <a class="next" onclick="plusSlides(1)"
+          ><i class="bx bx-chevron-right"></i
+        ></a>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)"><i class='bx bx-chevron-left'></i></a>
-  <a class="next" onclick="plusSlides(1)"><i class='bx bx-chevron-right' ></i></a>
-
-  <div class="search_parts absolute w-[466px] p-[3rem] bg-white rounded-[20px] shadow-lg left-[215px] flex flex-col justify-center">
-    <h1 class="font-[800] text-[23px] italic text-black">SEARCH PARTS</h1>
-    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400]" id="menu_parts" onclick="search_parts(1)">Select Maker<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
-      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_1">
-       <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Maker</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Audi (2)</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Ford (4)</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Honda (4)</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Kia (6)</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Mercedes (2)</div>
-       <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">Tesla (0)</div>
+        <div
+          class="search_parts absolute w-[466px] h-auto p-[3rem] bg-white rounded-[20px] shadow-lg left-[218px] flex flex-col justify-center"
+        >
+          <h1 class="font-[800] text-[23px] italic text-black">SEARCH PARTS</h1>
+          <li
+            class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400] menu_search"
+            id="menu_parts_1"
+            onclick="search_parts(1)"
+          >
+            Select Maker<i
+              class="bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]"
+            ></i>
+            <div
+              class="absolute w-[101%] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden menu_search_1"
+              id="menu_search_parts_1"
+            >
+              <div
+                class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]"
+              >
+                Select Maker
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Audi (2)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Ford (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Honda (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Kia (6)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Mercedes (2)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white"
+              >
+                Tesla (0)
+              </div>
+            </div>
+          </li>
+          <li
+            class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400] bg-white menu_search"
+            id="menu_parts_2"
+            onclick="search_parts(2)"
+          >
+            Select Model<i
+              class="bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]"
+            ></i>
+            <div
+              class="absolute w-[101%] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden menu_search_1_1"
+              id="menu_search_parts_2"
+            >
+              <div
+                class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]"
+              >
+                Select Model
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                A3 (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                A5 (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                A6 (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                A8 (2)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Civic (1)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                CR-H (0)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                CRV (1)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Fiesta (3)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Rio (2)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Scorpio (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                Soul (0)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white"
+              >
+                Sportage (2)
+              </div>
+            </div>
+          </li>
+          <li
+            class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400] menu_search"
+            id="menu_parts_3"
+            onclick="search_parts(3)"
+          >
+            Select Year<i
+              class="bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]"
+            ></i>
+            <div
+              class="absolute w-[101%] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden menu_search_1"
+              id="menu_search_parts_3"
+            >
+              <div
+                class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]"
+              >
+                Select Year
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                2018 (1)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                2020 (4)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white"
+              >
+                2022 (5)
+              </div>
+              <div
+                class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white"
+              >
+                2023 (2)
+              </div>
+            </div>
+          </li>
+          <span
+            class="pt-[2rem] italic text-black font-[900] text-[13px] text-center hover:text-[#f7c601] cursor-pointer filter"
+            >FILTER</span
+          >
+        </div>
+        <div
+          class="group search_parts p-5 italic absolute h-auto left-[815px] flex flex-col justify-center truncate"
+        >
+          <h1
+            class="sale_slider_1 font-[800] text-[40px] italic text-black translate-x-[30px] opacity-0 leading-[38px]"
+          >
+            MEGA SALE <br />
+            70% OFF
+          </h1>
+          <h1
+            class="sale_slider_2 font-[750] text-black text-[15px] mt-[20px] translate-x-[30px] opacity-0"
+          >
+            EXHAUST PIPE FOR SUPER CAR
+          </h1>
+          <button
+            class="sale_slider_3 w-[180px] bg-[#f7c601] p-3 font-[800] italic text-black text-[12px] mt-[30px] rounded-[20px] translate-x-[30px] opacity-0"
+          >
+            APPLY NOW
+          </button>
+        </div>
       </div>
-    </li>
-    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400] bg-white" id="menu_parts" onclick="search_parts(2)">Select Model<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
-      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_2">
-        <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Model</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A3 (4)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A5 (4)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A6 (4)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">A8 (2)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Civic (1)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">CR-H (0)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">CRV (1)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Fiesta (3)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Rio (2)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Scorpio (4)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">Soul (0)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">Sportage (2)</div>
-       </div>
-    </li>
-    <li class="flex items-center relative mt-[15px] border py-4 px-7 rounded-[30px] text-[13px] cursor-pointer text-black font-[400]" id="menu_parts" onclick="search_parts(3)">Select Year<i class='bx bxs-down-arrow absolute right-[30px] text-[11px] text-[#f7c601]' ></i>
-      <div class="absolute w-[370px] border-[1px] border-gray-300 left-[-1px] shadow-lg top-[52px] rounded-[10px] bg-white z-10 hidden" id="menu_search_parts_3">
-        <div class="px-7 cursor-default bg-blue-600 text-white rounded-t-[7px]">Select Year</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2018 (1)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2020 (4)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 hover:text-white">2022 (5)</div>
-        <div class="px-7 cursor-default text-black hover:bg-blue-600 rounded-b-[7px] hover:text-white">2023 (2)</div>
-       </div>
-    </li>
-    <span class="pt-[2rem]  italic text-black font-[900] text-[13px] text-center hover:text-[#f7c601] cursor-pointer">FILTER</span>
-  </div>
-</div>
-
     </div>
 
+    <div class="product_container px-3">
+      <div class="product max-w-[1490px] m-auto flex gap-[30px] py-[2rem] ">
+        <div class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2rem] w-[298px] hover:border-[#f7c601] "><h3 class=" text-black text-[18px] font-[800] w-[50%] leading-[20px] italic  hover:text-[#f7c601] cursor-pointer">BODY <br> PARTS</h3><img src="../public/img/card/car.png" alt="" class="transform group-hover:scale-x-[-1] transition-transform duration-[1s] "></div>
+        <div class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2rem] w-[298px] hover:border-[#f7c601] "><h3 class=" text-black text-[18px] font-[800] w-[50%] leading-[20px] italic  hover:text-[#f7c601] cursor-pointer">BODY <br> PARTS</h3><img src="../public/img/card/car.png" alt="" class="transform group-hover:scale-x-[-1] transition-transform duration-[1s] "></div>
+        <div class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2rem] w-[298px] hover:border-[#f7c601] "><h3 class=" text-black text-[18px] font-[800] w-[50%] leading-[20px] italic  hover:text-[#f7c601] cursor-pointer">BODY <br> PARTS</h3><img src="../public/img/card/car.png" alt="" class="transform group-hover:scale-x-[-1] transition-transform duration-[1s] "></div>
+        <div class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2rem] w-[298px] hover:border-[#f7c601] "><h3 class=" text-black text-[18px] font-[800] w-[50%] leading-[20px] italic  hover:text-[#f7c601] cursor-pointer">BODY <br> PARTS</h3><img src="../public/img/card/car.png" alt="" class="transform group-hover:scale-x-[-1] transition-transform duration-[1s] "></div>
+        <div class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2rem] w-[298px] hover:border-[#f7c601] "><h3 class=" text-black text-[18px] font-[800] w-[50%] leading-[20px] italic  hover:text-[#f7c601] cursor-pointer">BODY <br> PARTS</h3><img src="../public/img/card/car.png" alt="" class="transform group-hover:scale-x-[-1] transition-transform duration-[1s] "></div>
+      </div>
+    </div>
     <script src="../public/js/main.js"></script>
   </body>
 </html>

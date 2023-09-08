@@ -1,142 +1,193 @@
-body{
-    caret-color: transparent; /* xoá nhập chữ */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  caret-color: transparent; /* xoá nhập chữ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .my_menu .my_menu-ul .my_menu-ul--li::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 4px solid transparent;
-    border-left: 9px solid transparent;
-    border-bottom: 9px solid #f7c601; /* Màu của tam giác */
-    display: inline-block;
-    margin-right: 5px; /* Khoảng cách giữa tam giác và nội dung mục danh sách */
-    position: absolute;
-    top: 15px;
-    right: -15px;
-    transition: 0.2s;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 9px solid transparent;
+  border-bottom: 9px solid #f7c601; /* Màu của tam giác */
+  display: inline-block;
+  margin-right: 5px; /* Khoảng cách giữa tam giác và nội dung mục danh sách */
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  transition: 0.2s;
 }
 .my_menu .my_menu-ul .my_menu-ul--li:not(:first-child)::after {
-    right: -25px;
-    opacity: 0;
+  right: -25px;
+  opacity: 0;
 }
 
 .my_menu .my_menu-ul .my_menu-ul--li:not(:first-child):hover::after {
-    opacity: 1;
-    right: -15px;
+  opacity: 1;
+  right: -15px;
 }
-.home ul{
-    transition: 0.2s;
-    top: 60px;
-   opacity: 0;
-   pointer-events: none;
+.home ul {
+  transition: 0.2s;
+  top: 60px;
+  opacity: 0;
+  pointer-events: none;
 }
-.home:hover ul{
-   opacity: 1;
-    top: 44px;
-    pointer-events: all;
-    z-index: 20;
+.home:hover ul {
+  opacity: 1;
+  top: 44px;
+  pointer-events: all;
+  z-index: 20;
 }
-.home ul li a img{
-    transition: transform 0.3s;
+.home ul li a img {
+  transition: transform 0.3s;
 }
-.home ul li a img:hover{
-    transform: scale(0.9);
+.home ul li a img:hover {
+  transform: scale(0.9);
 }
-.content_menu a{
-    padding: 0.3rem 0;
-    transition: 0.3s;
+.content_menu a {
+  padding: 0.3rem 0;
+  transition: 0.3s;
 }
-.content_menu a:hover{
-    color: #f7c601;
+.content_menu a:hover {
+  color: #f7c601;
 }
 .menu_scroll {
-    overflow: hidden;
-    height: 0px;
-    transition: height 0.5s ease; /* Chỉnh thời gian 0.5s cho hiệu ứng chậm hơn */
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.5s ease; /* Chỉnh thời gian 0.5s cho hiệu ứng chậm hơn */
 }
-.icon{
-    transition: 0.5s;
+.icon {
+  transition: 0.5s;
 }
-.logo i{
-    transition: 0.3s;
+.logo i {
+  transition: 0.3s;
 }
-.search{
-    transition: 0.5s;
+.search {
+  transition: 0.5s;
 }
-.search:hover i{
-    color: #f7c601;
-    transition: 0.3s;
+.search:hover i {
+  color: #f7c601;
+  transition: 0.3s;
 }
 
 /* text */
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    align-items: center;
-    display: flex;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: white;
+  opacity: 0;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev {
+  left: 8rem;
+  border-radius: 50%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 8rem;
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.banner:hover .prev,
+.banner:hover .next {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+.prev:hover,
+.next:hover {
+  background-color: #f7c601 !important;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    color: white;
-    opacity: 0;
-    font-weight: bold;
-    font-size: 28px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-  }
-  
-  .prev{
-    left: 8rem;
-    border-radius: 50%;
-  }
-  /* Position the "next button" to the right */
-  .next {
-    right: 8rem;
-    border-radius: 50%;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .banner:hover .prev,
-  .banner:hover .next {
-    background-color: rgba(0,0,0,0.8);
+  to {
     opacity: 1;
   }
-  .prev:hover,
-  .next:hover {
-    background-color: #f7c601 !important;
+}
+.menu_search_parts {
+  display: block;
+}
+@media screen and (max-width: 1500px) {
+  .search_parts {
+    width: 311px;
+    padding: 2.5rem;
   }
+  .menu_search {
+    padding: 0.5rem 1.5rem;
+  }
+  .menu_search_1_1 {
+    top: -256px;
+  }
+  .menu_search_1 {
+    top: 36px;
+  }
+  .filter {
+    font-size: 8px;
+    padding: 1rem;
+  }
+}
 
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  .menu_search_parts{
-    display: block;
-  }
-  
-  
-  
+.sale_slider_1_1 {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 0.5s;
+  transform: translateX(0);
+}
+.sale_slider_2_2 {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 1s;
+  transform: translateX(0);
+}
+.sale_slider_3_3 {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 1.5s;
+  transform: translateX(0);
+}
+
+.content_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
