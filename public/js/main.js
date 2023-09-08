@@ -29,7 +29,7 @@ showSlides(slideIndex);
 // Thiết lập hàm tự động chuyển ảnh sau mỗi 5 giây
 setInterval(function () {
   plusSlides(1);
-}, 5000);
+}, 10000);
 
 // Next/previous controls
 function plusSlides(n) {

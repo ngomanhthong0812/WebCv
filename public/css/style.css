@@ -180,14 +180,3 @@ body {
   transition-delay: 1.5s;
   transform: translateX(0);
 }
-
-.content_1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.content_2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
