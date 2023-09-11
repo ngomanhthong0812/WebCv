@@ -139,3 +139,14 @@ document.addEventListener("mouseup", function (event) {
     menu.classList.remove("menu_search_parts");
   }
 });
+
+//chuyển ảnh khi hover card product
+function imageOver(n, container) {
+  //querySelectorAll trả về một mảng
+  var card = container.querySelector("img");
+  card.src = "../public/img/product/Image-" + n + "-1.jpg";
+}
+function imageOut(n, container) {
+  var card = container.querySelector("img");
+  card.src = "../public/img/product/Image-" + n + ".jpg";
+}

@@ -116,7 +116,7 @@
               class="bx bx-chevron-down text-[20px] mb-[4px] icon"
             ></i>
             <div
-              class="bg-[#f7c601] w-[100%] h-[0] absolute top-[44px] px-[0.1rem] pb-[2px] menu_scroll opacity-0 z-[1]"
+              class="bg-[#f7c601] w-[100%] h-[0] absolute top-[44px] px-[0.1rem] pb-[0.1rem] menu_scroll opacity-0 z-[1] flex items-center justify-center"
             >
               <div class="w-[100%] bg-white">
                 <div class="px-[20px]">
@@ -970,9 +970,10 @@
       </div>
     </div>
 
+    
     <div class="my_body px-3">
       <div class="product max-w-[1490px] m-auto flex gap-[30px] py-[2rem] relative">
-        <img src="../public/img/card/img-9.png" alt="" class="absolute right-[-90px] top-0 z-0">
+        <img src="../public/img/card/img-9.png" alt="" class="absolute right-[-80px] top-0 z-0">
         <div
           class="group items_product rounded-[15px] transition-border duration-[1s] border flex items-center justify-center py-[2.5rem] w-[298px] hover:border-[#f7c601] bg-white"
         >
@@ -1047,11 +1048,11 @@
       </div>
 
       <div class="container_banner_body max-w-[1490px] m-auto flex justify-between gap-[20px]">
-        <div class="banner_body relative w-[730px]">
+        <div class="banner_body relative w-[730px] group truncate rounded-[25px]">
           <img
             src="../public/img/banner_body/banner-32.png"
             alt=""
-            class="w-[100%] rounded-[25px]"
+            class="w-[100%] rounded-[25px] transform scale-100 group-hover:scale-110 transition-transform duration-[1s] ease-in-out"
           />
           <div
             class="group top-0 italic absolute flex flex-col justify-center h-[100%] truncate items-start px-[3rem]"
@@ -1070,11 +1071,11 @@
             </button>
           </div>
         </div>
-        <div class="banner_body relative w-[730px]">
+        <div class="banner_body relative w-[730px] group truncate rounded-[25px]">
           <img
             src="../public/img/banner_body/banner-33.png"
             alt=""
-            class="w-[100%] rounded-[25px]"
+            class="w-[100%] rounded-[25px] transform scale-100 group-hover:scale-110 transition-transform duration-[1s] ease-in-out"
           />
           <div
             class="group top-0 italic absolute flex flex-col justify-center h-[100%] truncate items-start px-[3rem]"
@@ -1094,6 +1095,233 @@
           </div>
         </div>
       </div>
+
+      <div class="product_card max-w-[1525px] m-auto">
+        <div class="title flex justify-between items-center pt-[7rem] pb-[1rem] px-[1rem]">
+          <h1 class="font-[800] text-[30px] italic text-black">BESTSELLER</h1>
+          <div class="product_card-menu flex gap-[30px]">
+            <div class="relative cursor-pointer text-[14px] font-[400] hover:text-[#f7c601] text-[#f7c601]">ELECTRONICS PARTS</div>
+            <div class="relative cursor-pointer text-[14px] font-[400] hover:text-[#f7c601] text-gray"> ENERGY PARTS</div>
+            <div class="relative cursor-pointer text-[14px] font-[400] hover:text-[#f7c601] text-gray"> LIGHTING PARTS</div>
+          </div>
+        </div>
+        <div class="container_card grid grid-cols-5">
+          <div class="card p-[1rem] group" onmouseover="imageOver(1,this)" onmouseout="imageOut(1,this)">
+            <div class="w-[100%] relative truncate">
+              <img src="../public/img/product/Image-1.jpg" alt="" class="w-[100%] cursor-pointer">
+              <div class="menu_icon absolute top-[20px] right-[20px]">
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601]  hover:delay-0"><i class='bx bx-heart'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.1s] hover:delay-0"><i class='bx bx-sort bx-rotate-90'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.2s] hover:delay-0 "><i class='bx bx-fullscreen'></i></div>
+              </div>
+            </div>
+            <div class="content py-[0.8rem] relative">
+              <div class="text-[10px] cursor-pointer hover:text-[#f7c601]">ELECTRONICS PARTS</div>
+              <div class="text-[14px] font-bold italic leading-4 mt-[5px] cursor-pointer hover:text-[#f7c601]">CHEVY 305 327 350 400 ULTIMATE CAM KIT</div>
+              <div class="star flex mt-[5px] items-center">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <div class="text-[10px] text-gray-500">(0 REVIEW)</div>
+              </div>
+              <div class="text-[18px] font-bold text-black italic group-hover:translate-y-[20px] duration-[0.5s] group-hover:opacity-[0] mt-[5px]" style="text-shadow: 0 0 1px black;">$150.000</div>
+              <button class="absolute bg-[#f7c601] font-[700] text-black text-[14px] italic px-6 py-1 rounded-[25px] group-hover:translate-y-[-20px] duration-[0.5s] opacity-0 group-hover:opacity-[1]">ADD TO CART</button>
+            </div>
+          </div>
+         
+          <div class="card p-[1rem] group" onmouseover="imageOver(2,this)" onmouseout="imageOut(2,this)">
+            <div class="w-[100%] relative truncate">
+              <img src="../public/img/product/Image-2.jpg" alt="" class="w-[100%] cursor-pointer">
+              <div class="menu_icon absolute top-[20px] right-[20px]">
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601]  hover:delay-0"><i class='bx bx-heart'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.1s] hover:delay-0"><i class='bx bx-sort bx-rotate-90'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.2s] hover:delay-0 "><i class='bx bx-fullscreen'></i></div>
+              </div>
+            </div>
+            <div class="content py-[0.8rem] relative">
+              <div class="text-[10px] cursor-pointer hover:text-[#f7c601]">ELECTRONICS PARTS</div>
+              <div class="text-[14px] font-bold italic leading-4 mt-[5px] cursor-pointer hover:text-[#f7c601]">SERIES 1200 W 40 AH AGM AUDIO POWER BATTERY</div>
+              <div class="star flex mt-[5px] items-center">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <div class="text-[10px] text-gray-500">(0 REVIEW)</div>
+              </div>
+              <div class="text-[18px] font-bold text-black italic group-hover:translate-y-[20px] duration-[0.5s] group-hover:opacity-[0] mt-[5px]" style="text-shadow: 0 0 1px black;">$150.000</div>
+              <button class="absolute bg-[#f7c601] font-[700] text-black text-[14px] italic px-6 py-1 rounded-[25px] group-hover:translate-y-[-20px] duration-[0.5s] opacity-0 group-hover:opacity-[1]">ADD TO CART</button>
+            </div>
+          </div>
+         
+
+          <div class="card p-[1rem] group" onmouseover="imageOver(3,this)" onmouseout="imageOut(3,this)">
+            <div class="w-[100%] relative truncate">
+              <img src="../public/img/product/Image-3.jpg" alt="" class="w-[100%] cursor-pointer">
+              <div class="menu_icon absolute top-[20px] right-[20px]">
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601]  hover:delay-0"><i class='bx bx-heart'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.1s] hover:delay-0"><i class='bx bx-sort bx-rotate-90'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.2s] hover:delay-0 "><i class='bx bx-fullscreen'></i></div>
+              </div>
+            </div>
+            <div class="content py-[0.8rem] relative">
+              <div class="text-[10px] cursor-pointer hover:text-[#f7c601]">ELECTRONICS PARTS</div>
+              <div class="text-[14px] font-bold italic leading-4 mt-[5px] cursor-pointer hover:text-[#f7c601]">PREMIUM ANTI-FOG ADDITIONAL LED HEAD LIGHTS</div>
+              <div class="star flex mt-[5px] items-center">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <div class="text-[10px] text-gray-500">(0 REVIEW)</div>
+              </div>
+              <div class="text-[18px] font-bold text-black italic group-hover:translate-y-[20px] duration-[0.5s] group-hover:opacity-[0] mt-[5px]" style="text-shadow: 0 0 1px black;">$80.000</div>
+              <button class="absolute bg-[#f7c601] font-[700] text-black text-[14px] italic px-6 py-1 rounded-[25px] group-hover:translate-y-[-20px] duration-[0.5s] opacity-0 group-hover:opacity-[1]">ADD TO CART</button>
+            </div>
+          </div>
+         
+
+          <div class="card p-[1rem] group" onmouseover="imageOver(4,this)" onmouseout="imageOut(4,this)">
+            <div class="w-[100%] relative truncate">
+              <img src="../public/img/product/Image-4.jpg" alt="" class="w-[100%] cursor-pointer">
+              <div class="menu_icon absolute top-[20px] right-[20px]">
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601]  hover:delay-0"><i class='bx bx-heart'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.1s] hover:delay-0"><i class='bx bx-sort bx-rotate-90'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.2s] hover:delay-0 "><i class='bx bx-fullscreen'></i></div>
+              </div>
+              <div class="sale absolute top-[25px] left-[30px]">
+                <div class="px-3 py-[4px] text-[11px] flex items-center justify-center rounded-[15px] bg-[#f7c601] mt-[5px] text-black">HOT</div>
+                <div class="px-3 py-[4px] text-[11px] flex items-center justify-center rounded-[15px] bg-red-600 mt-[5px] text-white">-33%</div>
+              </div>
+            </div>
+            <div class="content py-[0.8rem] relative">
+              <div class="text-[10px] cursor-pointer hover:text-[#f7c601]">ELECTRONICS PARTS</div>
+              <div class="text-[14px] font-bold italic leading-4 mt-[5px] cursor-pointer hover:text-[#f7c601]">ALL WEATHER TERRAIN BRAKER ABS/PRO</div>
+              <div class="star flex mt-[5px] items-center text-[#f7c601]">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <div class="text-[10px] text-gray-500">(1 REVIEW)</div>
+              </div>
+              <div class="text-[18px] font-bold text-black italic group-hover:translate-y-[20px] duration-[0.5s] group-hover:opacity-[0] mt-[5px]" style="text-shadow: 0 0 1px black;">$100.000 &nbsp<span class="text-[#a5a5a5] line-through" style="text-shadow: 0 0 0;">$150.000</span></div>
+              <button class="absolute bg-[#f7c601] font-[700] text-black text-[14px] italic px-6 py-1 rounded-[25px] group-hover:translate-y-[-20px] duration-[0.5s] opacity-0 group-hover:opacity-[1]">ADD TO CART</button>
+            </div>
+          </div>
+         
+          <div class="card p-[1rem] group" onmouseover="imageOver(5,this)" onmouseout="imageOut(5,this)">
+            <div class="w-[100%] relative truncate">
+              <img src="../public/img/product/Image-5.jpg" alt="" class="w-[100%] cursor-pointer">
+              <div class="menu_icon absolute top-[20px] right-[20px]">
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601]  hover:delay-0"><i class='bx bx-heart'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.1s] hover:delay-0"><i class='bx bx-sort bx-rotate-90'></i></div>
+                <div class="w-[30px] h-[30px] flex items-center justify-center mt-[6px] rounded-full bg-[#fce072] shadow-lg text-black cursor-pointer transform translate-x-[30px] opacity-0 duration-[0.5s] group-hover:translate-x-[0] group-hover:opacity-[1] hover:bg-[#f7c601] delay-[0.2s] hover:delay-0 "><i class='bx bx-fullscreen'></i></div>
+              </div>
+              <div class="sale absolute top-[25px] left-[30px]">
+                <div class="px-3 py-[4px] text-[11px] flex items-center justify-center rounded-[15px] bg-[#f7c601] mt-[5px] text-black">HOT</div>
+                <div class="px-3 py-[4px] text-[11px] flex items-center justify-center rounded-[15px] bg-red-600 mt-[5px] text-white">-37%</div>
+              </div>
+            </div>
+            <div class="content py-[0.8rem] relative">
+              <div class="text-[10px] cursor-pointer hover:text-[#f7c601]">ELECTRONICS PARTS</div>
+              <div class="text-[14px] font-bold italic leading-4 mt-[5px] cursor-pointer hover:text-[#f7c601]">DETROIT AXLE – ALL (4) FRONT AND REAR DISC BRAKE ROTORS</div>
+              <div class="star flex mt-[5px] items-center">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <div class="text-[10px] text-gray-500">(0 REVIEW)</div>
+              </div>
+              <div class="text-[18px] font-bold text-black italic group-hover:translate-y-[20px] duration-[0.5s] group-hover:opacity-[0] mt-[5px]" style="text-shadow: 0 0 1px black;">$50.000 &nbsp <span class="text-[#a5a5a5] line-through" style="text-shadow: 0 0 0;">$79.000</span></div>
+              <button class="absolute bg-[#f7c601] font-[700] text-black text-[14px] italic px-6 py-1 rounded-[25px] group-hover:translate-y-[-20px] duration-[0.5s] opacity-0 group-hover:opacity-[1]">ADD TO CART</button>
+            </div>
+          </div>
+         
+         
+        </div>
+      </div>
+      
+      <div class="container_banner_body max-w-[1490px] m-auto flex justify-between py-[5rem]">
+        <div class="banner_body relative w-[475px] h-[300px] rounded-[25px] group truncate">
+          <img
+            src="../public/img/banner_body/banner-12.jpg"
+            alt=""
+            class="w-[100%] h-[100%] rounded-[25px] transform scale-100 group-hover:scale-110 transition-transform duration-[1s] ease-in-out"
+          />
+          <div
+            class="group top-0 italic absolute flex flex-col justify-center h-[100%] truncate items-start px-[3rem]"
+          >
+            <h1 class="font-[800] text-[30px] italic text-black leading-[30px]">
+             SALE UP TO<br />
+              25% OFF
+            </h1>
+            <h1 class="font-[500] text-[#a5a5a5] text-[14px] mt-[15px]">
+              Engine oil Casstroll
+            </h1>
+            <button
+              class="w-[130px] bg-[#f7c601] p-2 font-[800] italic text-black text-[12px] mt-[30px] rounded-[20px] hover:bg-black hover:text-white transform duration-[0.5s] cursor-pointer "
+            >
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        <div class="banner_body relative w-[475px] h-[300px] rounded-[25px] group truncate">
+          <img
+            src="../public/img/banner_body/ban-4.jpg"
+            alt=""
+            class="w-[100%] h-[100%] rounded-[25px] transform scale-100 group-hover:scale-110 transition-transform duration-[1s] ease-in-out"
+          />
+          <div
+            class="group top-0 italic absolute flex flex-col justify-center h-[100%] truncate items-start px-[3rem]"
+          >
+            <h1 class="font-[800] text-[30px] italic text-black leading-[30px]">
+              BRAKE ABS <br>
+              PORSCE
+            </h1>
+            <h1 class="font-[600] text-black text-[17px] mt-[15px]">
+              $198.00 <span class="text-[#a5a5a5] line-through">$409.00</span>
+            </h1>
+            <button
+              class="w-[130px] bg-[#f7c601] p-2 font-[800] italic text-black text-[12px] mt-[30px] rounded-[20px] hover:bg-black hover:text-white transform duration-[0.5s] cursor-pointer"
+            >
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        <div class="banner_body relative w-[475px] h-[300px] group rounded-[25px] group truncate">
+          <img
+            src="../public/img/banner_body/banner-14.jpg"
+            alt=""
+            class="w-[100%] h-[100%] rounded-[25px] transform scale-100 group-hover:scale-110 transition-transform duration-[1s] ease-in-out"
+          />
+          <div
+            class="group top-0 italic absolute flex flex-col justify-center h-[100%] truncate items-start px-[3rem]"
+          >
+            <h1 class="font-[800] text-[30px] italic text-black leading-[30px]">
+              TURBO<br>
+              CHARGER
+            </h1>
+            <h1 class="font-[500] text-[#a5a5a5] text-[14px] mt-[15px]">
+              Top quality low price
+            </h1>
+            <button
+              class="w-[130px] bg-[#f7c601] p-2 font-[800] italic text-black text-[12px] mt-[30px] rounded-[20px] hover:bg-black hover:text-white transform duration-[0.5s] cursor-pointer"
+            >
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
     </div>
     <script src="../public/js/main.js"></script>
   </body>

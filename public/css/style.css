@@ -180,3 +180,49 @@ body {
   transition-delay: 1.5s;
   transform: translateX(0);
 }
+
+.product_card-menu div:not(div:nth-child(3))::before{
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #f7c601;
+  position: absolute;
+  right: -25px;
+  top: 10px;
+  transform: rotate(60deg)
+}
+.menu_icon div{
+  position: relative;
+}
+.menu_icon div:hover::before{
+  content: "Wishlist";
+  width: 60px;
+  left: -70px;
+  background-color: #f7c601;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 0.3rem 0.5rem;
+  color: black;
+  font-weight: 400;
+}
+.menu_icon div:hover:nth-child(2):before{
+  content: "Compare";
+}
+.menu_icon div:hover:nth-child(2):before{
+  content: "Quick View";
+}
+.menu_icon div:hover::after{
+  content: "";
+  width: 10px;
+  padding: 0.5rem;
+  background-color: #f7c601;
+  position: absolute;
+  left: -25px;
+  transform: rotate(50deg);
+  z-index: 0;
+}
