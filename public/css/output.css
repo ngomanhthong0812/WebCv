@@ -612,12 +612,12 @@ video {
   right: 0px;
 }
 
-.right-\[-5px\] {
-  right: -5px;
+.right-\[-10px\] {
+  right: -10px;
 }
 
-.right-\[-80px\] {
-  right: -80px;
+.right-\[-5px\] {
+  right: -5px;
 }
 
 .right-\[20px\] {
@@ -640,12 +640,28 @@ video {
   top: 25px;
 }
 
-.top-\[44px\] {
-  top: 44px;
+.top-\[43px\] {
+  top: 43px;
 }
 
 .top-\[52px\] {
   top: 52px;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[505\] {
+  top: 505;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
 }
 
 .z-0 {
@@ -682,6 +698,10 @@ video {
 
 .mt-\[30px\] {
   margin-top: 30px;
+}
+
+.mt-\[3px\] {
+  margin-top: 3px;
 }
 
 .mt-\[5px\] {
@@ -734,6 +754,10 @@ video {
 
 .h-\[31px\] {
   height: 31px;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-auto {
@@ -860,10 +884,6 @@ video {
   max-width: 1490px;
 }
 
-.max-w-\[1525px\] {
-  max-width: 1525px;
-}
-
 .translate-x-\[30px\] {
   --tw-translate-x: 30px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -889,6 +909,10 @@ video {
 
 .grid-flow-col {
   grid-auto-flow: column;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
@@ -937,6 +961,10 @@ video {
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.gap-\[80px\] {
+  gap: 80px;
 }
 
 .gap-\[\[15px\]\] {
@@ -1071,10 +1099,6 @@ video {
   padding: 0.8rem;
 }
 
-.p-\[1rem\] {
-  padding: 1rem;
-}
-
 .p-\[3rem\] {
   padding: 3rem;
 }
@@ -1134,6 +1158,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-\[4rem\] {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1187,6 +1216,11 @@ video {
 .py-\[5rem\] {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-\[7rem\] {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .pb-\[0\.1rem\] {
@@ -1297,6 +1331,10 @@ video {
   font-size: 40px;
 }
 
+.text-\[50px\] {
+  font-size: 50px;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -1335,6 +1373,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-\[100p\] {
+  font-weight: 100p;
+}
+
+.font-\[100\] {
+  font-weight: 100;
 }
 
 .italic {
